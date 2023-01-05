@@ -1,0 +1,736 @@
+/*general*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.allpurposeheader {
+  background: #0017e6;
+  color: #fff;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  font-family: Notable;
+}
+
+.allpurposeheader h1 {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 100;
+}
+
+.allpurposeheader h2 {
+  font-size: 20px;
+}
+
+.allpurposeheader h1::first-letter {
+  font-size: 50px;
+  color: rgb(233, 10, 10);
+}
+
+.allpurposeheader h2:first-letter {
+  font-size: 50px;
+  color: rgb(233, 10, 10);
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+}
+
+nav {
+  background: #2a492c;
+  height: 80px;
+  width: 100%;
+}
+
+nav ul {
+  float: left;
+}
+
+nav li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 20px;
+}
+
+nav a {
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+nav a:active {
+  background: rgb(133, 107, 107);
+  color: #000;
+}
+
+nav a:hover {
+  background: #fff;
+  color: #000;
+}
+
+.burger-section2 {
+  background-color: #414141;
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+.burger-section2 ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+.burger-section2 li a {
+  display: block;
+  color: #414141;
+  padding: 20px 20px;
+}
+
+.logo {
+  color: #ffffff;
+  display: block;
+  float: right;
+  font-size: 1.5em;
+  padding: 12px 20px;
+}
+
+a:hover,
+.menu-btn:hover {
+  background-color: #1c1c1c;
+}
+
+.items {
+  clear: both;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+}
+
+.burger-section {
+  width: 30%;
+  float: right;
+}
+
+.burger-section2 {
+  display: none;
+}
+
+.menu-icon {
+  cursor: pointer;
+  float: right;
+  position: relative;
+  user-select: none;
+  padding: 28px 20px;
+  margin: 0 auto;
+}
+
+.navicon {
+  background: #ffffff;
+  display: block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+
+.navicon:before,
+.navicon:after {
+  background: #fff;
+  display: block;
+  height: 100%;
+  position: absolute;
+  content: "";
+  transition: all 0.2s ease-out;
+  width: 100%;
+}
+
+.navicon:before {
+  top: 5px;
+}
+
+.navicon:after {
+  top: -5px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn:checked~.items {
+  max-height: 260px;
+}
+
+.burger-section2 .menu-btn:checked~.menu-icon .navicon {
+  background: transparent;
+}
+
+.burger-section2 .menu-btn:checked~.menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.burger-section2 .menu-btn:checked~.menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.burger-section2 .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+.burger-section2 .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+footer {
+  width: 100%;
+  position: relative;
+  justify-content: left;
+  padding: 10px;
+  clear: both;
+  color: #fff;
+  background-color: #000;
+}
+
+.cookiebox {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+}
+
+.cookiestatement {
+  color: #fff;
+  background-color: #fa0;
+  opacity: 50%;
+  z-index: 9999;
+  width: 50%;
+  float: right;
+}
+
+/*end general*/
+
+/*index */
+
+.main-index {
+  width: 100%;
+  height: 100%;
+}
+
+video {
+  display: flex;
+  width: auto;
+  height: auto;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
+}
+
+.index-article {
+  padding-left: 3em;
+  border-style: double;
+  width: 70%;
+  float: left;
+}
+
+.index-article>p {
+  word-spacing: 1.5px;
+  line-height: 1.5;
+  text-indent: 1px;
+  letter-spacing: 0.5px;
+
+}
+
+.index-article>h4+p {
+  color: #000;
+}
+
+.index-image {
+  width: 160px;
+  height: 125px;
+  float: right;
+  padding: 0.5rem;
+}
+
+.aside-index {
+  width: 25%;
+  height: 100%;
+  float: right;
+  padding-left: 0.4rem;
+  background-color: #2a9fa3;
+}
+
+.aside-index>ol {
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  word-spacing: 2px;
+  text-indent: 5px;
+}
+
+
+/*product*/
+
+
+#product-article1 {
+  grid-area: product-article1;
+}
+
+#product-article2 {
+  grid-area: product-article2;
+}
+
+#product-article3 {
+  grid-area: product-article3;
+}
+
+#product-article4 {
+  grid-area: product-article4;
+}
+
+#product-article5 {
+  grid-area: product-article5;
+}
+
+#product-article6 {
+  grid-area: product-article6;
+}
+
+#product-aside1 {
+  grid-area: product-aside1;
+}
+
+#product-aside2 {
+  grid-area: product-aside2;
+}
+
+#product-aside3 {
+  grid-area: product-aside3;
+}
+
+.product-main {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "product-article2 product-article2 product-article1 product-article1 product-article3 product-article3"
+    "product-article2 product-article2 product-article1 product-article1 product-article3 product-article3"
+    "product-article2 product-article2 product-article1 product-article1 product-article3 product-article3"
+    "product-article5 product-article5 product-article1 product-article1 product-article4 product-article4"
+    "product-article5 product-article5 product-article1 product-article1 product-article4 product-article4"
+    "product-article5 product-article5 product-article1 product-article1 product-article4 product-article4"
+    "product-article5 product-article5 product-article6 product-article6 product-article6 product-article6"
+    "product-aside1 product-aside1 product-aside2 product-aside2 product-aside3 product-aside3";
+  grid-gap: 10px;
+  background-color: white;
+}
+
+.product-article {
+  padding: 20px;
+  font-size: 20px;
+  border-color: #1e36a0;
+  border-style: solid;
+  border-width: 10px;
+  letter-spacing: 0.8px;
+  line-height: 2;
+  word-spacing: 4px;
+  text-indent: 3px;
+  background-color: #209730;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+}
+
+/*price*/
+
+.pricing-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+.pricing-article {
+  width: 70%;
+  float: left;
+  padding-left: 3em;
+  border-style: double;
+}
+
+.pricing-table {
+  border-collapse: collapse;
+  width: 70%;
+}
+
+.pricing-aside {
+  width: 25%;
+  float: right;
+  padding-left: 2em;
+  background-color: #7c7c10;
+}
+
+.pricing-main p {
+  word-spacing: 1.5px;
+  line-height: 1.5;
+  text-indent: 1px;
+  letter-spacing: 0.5px;
+}
+
+.pricing-aside img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+tr:nth-child(even) {
+  background-color: #CFF;
+}
+
+tr:nth-child(odd) {
+  background-color: #FFF;
+}
+
+tr:first-child {
+  background-color: #FF0;
+}
+
+
+th,
+td,
+.pricing-a {
+  border: 2px solid black;
+  color: #000;
+}
+
+/*contact*/
+.contactmain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.contactform {
+  background-color: #fff;
+  color: #000;
+  float: left;
+  height: auto;
+  width: 70%;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.contactform input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #000;
+}
+
+.contactform textarea {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #fff;
+  color: #000;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #ac4caf;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #ffc72b;
+}
+
+input[type="text"]:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+input[type="email"]:focus {
+  background-color: #fff;
+  color: #000;
+}
+
+.contact-aside {
+  width: 20%;
+  height: auto;
+  float: right;
+  padding-left: 2em;
+  background-color: cadetblue;
+}
+
+.contact-aside img {
+  width: 250px;
+  height: 150px;
+  float: left;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1179px) {
+  body {
+    background-color: #7c1d1d;
+  }
+
+  /*tablet index*/
+  .main-index {
+    background-color: #f7f7f5;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .aside-index {
+    order: 1;
+    width: 100%;
+  }
+
+  .video {
+    order: 2;
+  }
+
+  #tech3 {
+    order: 3;
+  }
+
+  #tech2 {
+    order: 4;
+  }
+
+  #tech1 {
+    order: 5;
+  }
+
+  .index-article>a>.index-image {
+    float: left;
+  }
+
+  .index-article {
+    width: 100%;
+  }
+
+  /*tablet product*/
+  #product-article4,
+  #product-aside3 {
+    display: none;
+  }
+
+  .product-main {
+    grid-template-areas:
+      "product-article1 product-article1 product-article1 product-article2 product-article2 product-article2"
+      "product-article1 product-article1 product-article1 product-article2 product-article2 product-article2"
+      "product-article3 product-article3 product-article3 product-article2 product-article2 product-article2"
+      "product-article3 product-article3 product-article3 product-article5 product-article5 product-article5"
+      "product-article3 product-article3 product-article3 product-article5 product-article5 product-article5"
+      "product-article3 product-article3 product-article3 product-article5 product-article5 product-article5"
+      "product-article6 product-article6 product-article6 product-article6 product-article6 product-article6"
+      "product-article6 product-article6 product-article6 product-article6 product-article6 product-article6"
+      "product-aside1 product-aside1 product-aside1 product-aside2 product-aside2 product-aside2";
+  }
+
+  /*tablet pricing*/
+
+  .pricing-article {
+    order: 1;
+  }
+
+  .pricing-table {
+    order: 2;
+    width: 100%;
+  }
+
+  .pricing-datasource {
+    order: 3;
+    width: 100%;
+    padding: 2em;
+  }
+
+  .pricing-aside {
+    order: 4;
+    width: 100%;
+  }
+
+  .pricing-aside1 {
+    display: none;
+  }
+
+  .pricing-aside2 {
+    float: left;
+    width: 50%;
+  }
+
+  .pricing-aside3 {
+    float: right;
+    width: 50%;
+  }
+
+  /*tablet contact*/
+  .contactform {
+    width: 50%;
+  }
+
+  .contact-aside {
+    float: right;
+  }
+
+  .contact-aside img {
+    width: 150px;
+    height: 100px;
+    float: left;
+  }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+  /*mobile general*/
+  body {
+    background-color: #7e2525;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .burger-section2 {
+    display: block;
+  }
+
+  .burger-section2 ul {
+    background-color: #fff;
+  }
+
+  .pageheader {
+    width: 66%;
+  }
+
+
+  /*mobile index*/
+
+  main {
+    margin: 0px;
+  }
+
+  video {
+    display: none;
+  }
+
+  .index-article {
+    width: 100%;
+    padding: 0 0.8em;
+  }
+
+  .index-article>a>img.index-image {
+    margin: auto;
+    width: 50%;
+    margin-top: 0.8em;
+    margin-left: 5em;
+    float: left;
+  }
+
+  .aside-index {
+    width: 100%;
+    padding: 0 0.8em;
+  }
+
+  .aside-index ol {
+    padding: 1.5em;
+  }
+
+  /*mobile product*/
+
+  #product-article4,
+  #product-article6 {
+    display: none;
+  }
+
+  #product-aside3 {
+    display: block;
+  }
+
+  .product-main {
+    grid-template-areas:
+      "product-article5"
+      "product-article3"
+      "product-article2"
+      "product-article1"
+      "product-aside1"
+      "product-aside2"
+      "product-aside3";
+  }
+
+  /*mobile pricing*/
+
+  .pricing-article {
+    display: none;
+  }
+
+  .pricing-aside1 {
+    display: block;
+    width: 100%;
+    float: left;
+  }
+
+  .pricing-aside2 {
+    width: 100%;
+    float: left;
+  }
+
+  .pricing-aside3 {
+    width: 100%;
+    float: left;
+  }
+
+  /*mobile contact*/
+  .contactform {
+    width: 100%;
+    float: left;
+    order: 1;
+  }
+
+  .contact-aside {
+    width: 100%;
+    float: left;
+    padding: 0 0.8em;
+    order: 2;
+  }
+
+  .contact-aside img {
+    width: 250px;
+    height: 150px;
+  }
+
+}
+
+/* writing css is so tiring man */
+/* I stayed up late finishing this because i had the swell idea to watch a show for half the day */
